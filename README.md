@@ -1,1 +1,1 @@
-# rsschool-cv
+https://GITHUB-maxvell394.github.io/rsschool-cv/cv
