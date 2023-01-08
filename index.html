@@ -1,104 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>RSSchool CV</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="assets/favicon.ico">
+	<title>CV</title>
 </head>
 <body>
-	<div class="wrapper"> <!-- Обертка документа -->
-		<header class="header"><!-- заголовок сайта -->
-			<div class="column_left">
-				<figure class="header__avatar">
-					<img class="avatar" src="/img/IMG_Avatar.jpg" alt="Foto">
-				</figure>
-			</div>
-			<div class="info-text">
-				<h1 class="header__title">Максим Синицын</h1>
-				<h3 class="header__subtitle">Я студент<strong>RSSchool</strong></h3>
+	<div class="container">
+		<header class="header">
+			<div class="header-block">
+				<nav class="nav">
+					<ul class="nav-list">
+						<li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+						<li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+						<li class="nav-item"><a href="#skills" class="nav-link">skills</a></li>
+						<li class="nav-item"><a href="#code" class="nav-link">code</a></li>
+						<li class="nav-item"><a href="#courses" class="nav-link">courses</a></li>
+						<li class="nav-item"><a href="#education" class="nav-link">education</a></li>
+						<li class="nav-item"><a href="#english" class="nav-link">english</a></li>
+						<li class="nav-item"><a href="#projects" class="nav-link">projects</a></li>
+					</ul>
+				</nav>
 			</div>
 		</header>
-		<main class="main"><!-- основное содержание -->
-			<div class="column_left">
-				<section class="document-section contact"><!--блок контакты -->
-					<h2 class="document-title">Мои контакты</h2>
-					<ul class="contacts_wrapper">
-						<li class="contact__block">
-							<div class="contact__image contact__image_discord"></div>
-							<div class="contact__text">
-								<a href="https://discordapp.com/users/1041289910520401980" target="_blank" class="contact__link">Maxvell394#9207</a>
-							</div>
-						<li class="contact__block">
-							<div class="contact__image contact__image_vk"></div>
-							<div class="contact__text">
-								<a href="https://vk.com/id22735901" target="_blank" class="contact__link">vk.com/id22735901</a>
-							</div>
-						<li class="contact__block">
-							<div class="contact__image contact__image_email"></div>
-							<div class="contact__text">
-								<a href="mailto:maxvell187@yandex.ru" class="contact__link">maxvell187@yandex.ru</a>
-							</div>
-						</li>
-					</ul>
-				</section>
-				<section class="document-section education"><!--блок образование -->
-					<h2 class="document-title">Образование</h2>
-					<div class="education_bloc">
-						<div class="date education__date">2009-2014</div>
-						<p class="education__text">Саратовский политехнический институт, специальность "Инжененр автотранспортного предприятия"</p> 
+		<main class="main">
+			<div class="table">
+				<div class="table-left">
+					<div class="profiletex" id="profile">
+						<div class="imgBx">
+							<img class="avatar" src="./assets/img/IMG_Avatar.jpg" alt="Logotip">
+						</div>
 					</div>
-					<div class="date education__date">2022</div>
-						<p class="education__text">Обучение в RSSchool,подготовительный курс «JavaScript/Front-end. Stage 0»</p> 
-					</div>
+					</section>
+					<section class="section-contacts" id="contacts">
+						<h2 class="section-title">Contacts</h2>
+						<ul class="contacts-list">
+							<li contact__block><a href="https://discordapp.com/users/1041289910520401980" target="_blank" class="discord contact__link">Maxvell394#9207</a></li>
+							<li contact__block><a href="https://vk.com/id22735901" target="_blank"class="contact__link">VK</a></li>
+							<li contact__block><a href="mailto:maxvell187@yandex.ru" class="contact__link">maxvell187@yandex.ru</a></li>
+						</ul>
+					</section>
+					<section class="section" id="skills">
+						<h2 class="section-title">Skills</h2>
+						<ul>
+							<li>Изучаю HTML</li>
+							<li>Изучаю CSS</li>
+							<li>Изучаю Git</li>
+						</ul>
+					</section>
+					<section class="section" id="code">
+						<h2 class="section-title">Code Example</h2>
+						<p>In the process of creating</p>
+					</section>
+					<section class="section" id="english">
+						<h2 class="section-title">English</h2>
+						<p>School knowledge of English</p> 
+					</section>
+				</div>
+				<div class="table-right">
+					<h1 class="section-title-right">Sinicyn Maksim</h1>
+					<h3 id="courses"></h3>Student RS Schol</h3>
+					<section class="section" id="summary">
+						<h2 class="section-title-right">Summary</h2>
+						<p>Purposeful, active, I want to learn and develop, I signed up for RS school courses
+							for advanced training. I am considering working remotely. I am fond of active sports.</p>
+					</section>
+					<section class="section" id="education">
+						<h2 class="section-title-right">Education</h2>
+					<p>University: Saratov Polytechnic Institute, specialty "Engineer of a motor transport enterprise"</p> 
+					<p>Years: 2009 - 2014</p>
+					</section>
 				</section>
-				<section class="document-section skills"> <!--блок навыки -->
-					<h2 class="document-title">Навыки</h2>
-					<ul class="skills_wrapper">
-						<li class="skills__block">
-							<p class="skills__text">Изучаю HTML</p>
-						</li>
-						<li class="skills__block">
-							<p class="skills__text">Изучаю CSS</p>
-						</li>
-						<li class="skills__block">
-							<p class="skills__text">Изучаю Git</p>
-						</li>
-					</ul>
+				<section class="section" id="projects">
+					<h2 class="section-title-right">Projects</h2>
+					<p>In the process of creating</p>
 				</section>
-				<section class="document-section languages"><!--блок языки -->
-					<h2 class="document-title">Языки</h2>
-					<ul class="languages__list">
-						<li class="languages__item">Школьные знания английского языка</li>
-						<li class="languages__item">Дополнительны курсы</li>
-					</ul>
-				</section>
-			</div>
-			<div class="column_right">
-				<section class="document-section about">
-					<h2 class="document-title">Обо мне</h2>
-					<p class="about__text">Целеустремленный, активны, хочу учиться и развиваться, записался на курсы RS school 
-					для повышения квалификации. Расматриваю в дальнейшем работу на удаленке. Увлекаюсь активным спортом.</p>
-				</section>
-				<section class="document-section work">
-					<h2 class="document-title">Опыт работы</h2>
-					<div class="work__block">
-						<p class="about__text">Работаю инженером по системам речевого оповещения</p>
-					</div>
-				</section> 
+				</div>
 			</div>
 		</main>
 		<footer class="footer">
-			<div class="footer__inner">
-				<div class="footer__block">
-					<a href="https://github.com/maxvell394" target="_blank" class="footer__social"></a>
+			<div class="footer__container">
+				<div>
+					<a href="https://discordapp.com/users/1041289910520401980" class="discord nav-link">Discord</a>
 				</div>
-				<div class="footer__block">
-					<div class="footer__text">Для информации  <img src="/img/rs-logo.svg" class="footer__image" alt="logotip"> <a href="https://rs.school/js/" class="footer__link">Дошкольный курс</a> 2022</div>
-				</div>				
-				<div class="footer__block">
-					<a href="https://www.youtube.com/playlist?list=PLzLiprpVuH8eEh0Ua_ulidvrKGFdx_s0T" target="_blank" class="footer__social footer__social_yt"></a>
+				<div>
+					<a href="https://rs.school/js/" class="footer__link">Preschool course 2022</a>
+				</div>
+				<div>
+				<img src="./assets/svg/rs-logo.svg" class="footer__image" alt="logotip">
 				</div>
 			</div>
 		</footer>
