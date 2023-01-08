@@ -1,0 +1,131 @@
+/*прокрутка происходила плавно*/
+html {
+    scroll-behavior: smooth; 
+  }
+
+body{
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    margin: 0; 
+    padding: 0;
+      /*стилизации шрифта страницы*/
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333;
+}
+
+*{
+    box-sizing: border-box;
+}
+    
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  height:auto;
+  
+}
+.header{
+  background: black;
+}
+
+
+
+.nav-list{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+
+}
+.nav-item{
+  list-style-type: none;
+  margin-right: 10px;
+}
+.nav-link{
+  margin: 0;
+  text-decoration: none;
+  color: white;
+}
+.nav-link:hover{
+  color: orange;
+}
+
+.table{
+  display: flex;
+    height: 100%;
+    border: 1px solid black;
+    box-shadow: 0 81px 55px rgba(0, 0, 0, 0.1); 
+}
+.table-left{
+  width: 40%;
+  background: #c0c0c0;;
+}
+.table-right{
+  margin-left: 20px;
+  width: 60%;
+  background: white;
+}
+#summary, #education, #projects{
+  border-top: 1px solid orange;
+}
+/*стилизации заголовков*/
+.section-title {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 5px;
+  color: orange;
+  background: #333;
+}
+/*стилизации ссылок*/
+.contact__link {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.5s;
+}
+.contact__link:hover {
+  color: orange;
+}
+.avatar{
+  width: 350px;
+}
+.profiletex .imgBx{/* 7 редактирование фото, помещение в круглый контейнер*/
+  position: relative;/* Относительное позиционирование */
+  width: 500px;
+  height: 500px;
+  border-radius: 50%; /* закругление*/
+  overflow:hidden;/*Отображается только область внутри элемента*/
+}
+.profiletex .imgBx img{/* 8 отображение в нутри круглогоконтейнеа*/
+  position: absolute;
+  right: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;/*Управляет соотношением сторон*/
+}
+p {
+  text-align: center;
+}
+ul{
+  margin-left: 20px;
+}
+.ontact__block{
+  background-image: url(./assets/svg/discord.svg);
+}
+.footer__container{
+  background: #333;
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+}
+.footer__image{
+  width: 147px;
+  height: 40px;
+}
+.footer__link{
+  color: white;
+}
+.footer__link:hover {
+  color: orange;
+}
